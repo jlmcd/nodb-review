@@ -1,9 +1,10 @@
 import React from 'react'
 
-const Pokemon = () => {
+const Pokemon = (props) => {
   return (
     <div>
-      Pokemon
+      {props.data.name}
+      <img onClick={() => props.releaseFn(props.data.id)} src={props.data.img} alt=""/>
     </div>
   )
 }
