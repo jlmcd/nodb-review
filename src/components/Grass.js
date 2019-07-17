@@ -9,10 +9,10 @@ export default class Grass extends Component {
     }
   }
   render() {
-    console.log(this.props.prop)
     return(
       <div>
-        Grass
+        {this.props.pokeData.name}
+        <img src={this.props.pokeData.sprites.front_shiny} alt={this.props.pokeData.name}/>
       </div>
     )
   }
