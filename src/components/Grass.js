@@ -6,7 +6,7 @@ export default class Grass extends Component {
     this.state = {
       pokemonName: '',
       pokemonImg: '',
-      caught: false
+      toggle: false
     }
   }
   catchPokemon() {
@@ -15,14 +15,14 @@ export default class Grass extends Component {
       img: this.props.pokeData.sprites.front_shiny
     }
     this.props.catchFn(body)
-    this.setState({ caught: true })
+    this.setState({ toggle: true })
   }
 
   render() {
     return (
-      <div>
-        {this.state.caught ? null : this.props.pokeData.name}
-        {this.state.caught ? null : (
+      <div className='grass'>
+        {this.state.toggle ? null : <h4>{this.props.pokeData.name}</h4>}
+        {this.state.toggle ? null : (
           <img
             onClick={() => this.catchPokemon()}
             src={this.props.pokeData.sprites.front_shiny}

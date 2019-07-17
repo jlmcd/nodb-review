@@ -15,7 +15,7 @@ const pokemonCaught = [
     id: 3,
     name: 'Magneton',
     img:
-      'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/82.png'
+      'https://o.aolcdn.com/images/dims?quality=85&image_uri=http%3A%2F%2Fo.aolcdn.com%2Fhss%2Fstorage%2Fmidas%2F6623d5a6ae583f81ee3515b6b3615c7f%2F204855766%2Flandscape-1456483171-pokemon2.jpg&client=amp-blogside-v2&signature=a66341cc83efebc3c63cadf0db972d9a16e1b05d'
   }
 ]
 let id = 4

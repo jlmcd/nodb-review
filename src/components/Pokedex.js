@@ -13,6 +13,7 @@ export default class Pokedex extends Component {
               key={el.id} 
               data={el} 
               releaseFn={this.props.releaseFn}
+              saveFn={this.props.saveFn}
             />
           ))}
         </div>

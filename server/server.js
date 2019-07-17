@@ -7,6 +7,7 @@ const pokemonCtrl = require('./pokemonCtrl')
 app.use(express.json())
 
 app.get('/api/grass', grassCtrl.getPokemon)
+
 app.get('/api/pokemon', pokemonCtrl.getAll)
 app.post('/api/pokemon', pokemonCtrl.catch)
 app.delete('/api/pokemon/:id', pokemonCtrl.delete)
